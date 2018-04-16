@@ -1,0 +1,20 @@
+﻿The problems and the pitfalls
+=============================
+
+1. Recompiling the entire code even when a minor change has to be made
+
+Even if you make a small modification, the entire code needs to be re-compiled
+wasting precious development time.
+
+2. What happens when you supply this to a client who is interested only in printing job?
+
+You are passing a DLL or a library which contains a bunch of unnecessary functions which
+are not all required to your client. He or she may get confused over these functions.
+Passing a printer function to a printer client makes sense. But, what good does it make
+passing a bunch of irrelevant functions?
+
+3. Problem with “fat” Interfaces
+
+Even though the Print functionality is the only needed function for the printer-client,
+he/she might end up implementing some bunch of unwanted functions. Why are you forcing
+your printer client to implement scanning functionality even when they don't want it?

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0470FD6-5087-4511-A1B3-ED78E62A2545}</ProjectGuid>
+    <ProjectGuid>{E6FA7051-65E8-439A-AC85-0635F4673F22}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>solid</RootNamespace>
-    <AssemblyName>solid</AssemblyName>
+    <RootNamespace>Solid.FullExample</RootNamespace>
+    <AssemblyName>Solid.FullExample</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,12 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bad\GuitarAmp.cs" />
+    <Compile Include="better\FootSwitcher.cs" />
+    <Compile Include="better\GuitarAmp.cs" />
+    <Compile Include="better\HeadphoneComponent.cs" />
+    <Compile Include="better\IGuitarAmp.cs" />
+    <Compile Include="better\IHeadphoneComponent.cs" />
+    <Compile Include="better\IVolumeComponent.cs" />
+    <Compile Include="better\SpecialEffectComponent.cs" />
+    <Compile Include="better\SuperLoadVolumeComponent.cs" />
+    <Compile Include="better\VolumeComponent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

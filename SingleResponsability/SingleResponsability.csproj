@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0470FD6-5087-4511-A1B3-ED78E62A2545}</ProjectGuid>
+    <ProjectGuid>{5E864300-4448-42A9-9273-3C765888E1A8}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>solid</RootNamespace>
-    <AssemblyName>solid</AssemblyName>
+    <RootNamespace>SingleResponsability</RootNamespace>
+    <AssemblyName>SingleResponsability</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="correct\Customer.cs" />
+    <Compile Include="correct\FileLogger.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wrong\Customer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

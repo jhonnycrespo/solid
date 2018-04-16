@@ -1,0 +1,24 @@
+﻿https://exceptionnotfound.net/simply-solid-the-interface-segregation-principle/
+
+Potential Hazards
+=================
+
+As you might have guessed from the example, the ISP can potentially result in a lot
+of additional interfaces. If the store was to start selling t-shirts, for example,
+we would probably create another interface IShirt. There is a possibility that we will
+have a LOT of interfaces if we strictly adhere to this rule.
+
+There's another potential hazard with implementing this principle: we could have interfaces
+that are only ever used for one implementation. For example, if we create that IShirt interface
+and the store only ever sells t-shirts, did we really need the interface? I'd argue that
+such interfaces are code bloat and should be removed until such time as they are needed,
+but many people disagree with me.
+
+Is It Worth It?
+===============
+
+Maybe. This is the only SOLID principle I feel ambivalent about. On the one hand,
+aggressively adhering to this principle allows for much more flexible and modifiable code,
+something I'm a big fan of and is very useful in real-world projects. On the other hand,
+I'm an extreme deletionist, and would much prefer to delete code rather than write it,
+so writing a bunch of extra interfaces doesn't sit well with me.

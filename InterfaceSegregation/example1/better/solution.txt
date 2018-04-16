@@ -1,0 +1,36 @@
+﻿Martin suggested a solution that gave birth to Interface Segregation Principle.
+
+Here comes that:
+
+Break down the fat interface to smaller and meaningful role interfaces.
+In the above example, let the IMachine interface contain all the broken down interfaces.
+Inject the implementations of smaller interfaces to Machine class (Dependency Injection).
+
+What Happens Afterwards?
+========================
+
+1. A printer only client comes. What to do?
+
+It’s simple. Create an instance of Printer class and give to him/her.
+
+IPrinter printer = new Printer();
+
+// IDE shows that only the Print function is accessible. Clean, neat and separate.
+printer.print()
+
+Note that here we are not forcing him to use a library that has unwanted functionality
+(like scanning, faxing, etc.). Our client wants only the printer functionality and we give
+him what he asked for using our "IPrinter" role interface. Our client is now happy because
+he got what he wanted. :)
+
+2. A client wanting all the functionalities arrives. What to do?
+
+Easy enough.
+
+IPrinter printer = new Printer();
+IScan scanner = new Scanner();
+IFax fax = new Fax();
+IPhotoCopy photocopy = new PhotoCopy();
+IStaple staple = new Staple();
+
+var allOneClient  = new Machine(printer, fax, scan, photoCopy, staple);

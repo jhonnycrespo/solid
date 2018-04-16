@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0470FD6-5087-4511-A1B3-ED78E62A2545}</ProjectGuid>
+    <ProjectGuid>{3E4AD167-F403-4571-99BB-9275B53979E9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>solid</RootNamespace>
-    <AssemblyName>solid</AssemblyName>
+    <RootNamespace>OpenClosed</RootNamespace>
+    <AssemblyName>OpenClosed</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="example one\correct\Customer.cs" />
+    <Compile Include="example two\correct\ReportGenerator.cs" />
+    <Compile Include="example two\Customer.cs" />
+    <Compile Include="example two\wrong\ReportGenerator.cs" />
+    <Compile Include="example one\wrong\Customer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

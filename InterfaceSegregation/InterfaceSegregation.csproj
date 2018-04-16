@@ -42,11 +42,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="example1\bad\IMachine.cs" />
+    <Compile Include="example1\bad\Item.cs" />
+    <Compile Include="example1\bad\Machine.cs" />
+    <Compile Include="example1\better\FaxMachine.cs" />
+    <Compile Include="example1\better\IFax.cs" />
+    <Compile Include="example1\better\IMachine.cs" />
+    <Compile Include="example1\better\IPhotoCopy.cs" />
+    <Compile Include="example1\better\IPrinter.cs" />
+    <Compile Include="example1\better\IScan.cs" />
+    <Compile Include="example1\better\IStaple.cs" />
+    <Compile Include="example1\better\Machine.cs" />
+    <Compile Include="example1\better\PhotoCopy.cs" />
+    <Compile Include="example1\better\Printer.cs" />
+    <Compile Include="example1\better\Scanner.cs" />
+    <Compile Include="example1\better\Stapler.cs" />
+    <Compile Include="example2\bad\IMessage.cs" />
+    <Compile Include="example2\better\EmailMessage.cs" />
+    <Compile Include="example2\better\IEmailMessage.cs" />
+    <Compile Include="example2\better\IMessage.cs" />
+    <Compile Include="example2\better\SMSMessage.cs" />
+    <Compile Include="example3\bad\IProduct.cs" />
+    <Compile Include="example3\better\IProduct.cs" />
+    <Compile Include="example4\bad\ICustomer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="example1\bad\problems.txt" />
+    <Content Include="example1\better\solution.txt" />
+    <Content Include="example3\better\potential-hazards.txt" />
+    <Content Include="example3\readme.txt" />
+    <Content Include="readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="example4\better\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

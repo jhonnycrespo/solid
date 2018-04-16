@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0470FD6-5087-4511-A1B3-ED78E62A2545}</ProjectGuid>
+    <ProjectGuid>{0A3B9258-35E3-4FD8-94FC-89CE3D7247B9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>solid</RootNamespace>
-    <AssemblyName>solid</AssemblyName>
+    <RootNamespace>LiskovSubstitution</RootNamespace>
+    <AssemblyName>LiskovSubstitution</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="example 1\bad\Rectangle.cs" />
+    <Compile Include="example 1\better\Rectangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="readme.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
